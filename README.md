@@ -1,7 +1,9 @@
 #web tests
 
 Project created with JUnit, webdriver manager, webdriver, htmlelements and assertJ
+
 To run execute ./gradlew clean test
+
 In case if you want to launch tests on other app, then use gradle clean test -DapplicationAddress=APP_ADDRESS
 
 Further improvement options :
