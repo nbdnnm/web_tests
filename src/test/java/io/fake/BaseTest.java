@@ -1,11 +1,10 @@
 package io.fake;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+import io.fake.utils.WebDriverUtils;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 abstract public class BaseTest {
 
@@ -13,9 +12,8 @@ abstract public class BaseTest {
 
     @BeforeClass
     public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = new WebDriverUtils().getDriver();
+//        driver.manage().window().maximize();
     }
 
     @Before

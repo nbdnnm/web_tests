@@ -1,4 +1,4 @@
-package io.fake;
+package io.fake.utils;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ public class JSUtils {
         (new WebDriverWait(driver, 5000)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 JavascriptExecutor js = (JavascriptExecutor) d;
-                return (Boolean) js.executeScript("return document.readyState").equals("complete");
+                return js.executeScript("return document.readyState").equals("complete");
             }
         });
     }

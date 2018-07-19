@@ -1,7 +1,7 @@
 package io.fake.pages;
 
-import io.fake.JSUtils;
 import io.fake.elements.ComputersTable;
+import io.fake.utils.JSUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
